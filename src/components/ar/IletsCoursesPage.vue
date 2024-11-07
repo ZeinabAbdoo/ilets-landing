@@ -229,11 +229,14 @@
 </script>
 
 <style scoped>
+  /* all sections (global) */
   .ilets-sec1, .ilets-sec3, .ilets-sec5, .kids-sec9, .full-section, .full-section-2 {
     font-family: 'DIN Next LT Arabic';
     font-weight: 700;
   }
+  /* all sections (global) */
 
+  /* ilets-sec1 section */
   .ilets-sec1 {
     background-image: url('@/assets/images/ilets/bg1-1.png');
     background-size: cover;
@@ -300,60 +303,8 @@
     margin-block: 0;
   }
 
-  @media (max-width: 768px) {
-    .ilets-sec1 {
-      background-image: url('@/assets/images/ilets/mob1.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding-inline: 2rem;
-      margin-top: -5rem;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .text-container {
-      max-width: max-content;
-      padding-block: 5rem;
-      padding-inline: 0;
-      margin-block: 0;
-      margin-top: 20rem;
-    }
-
-    .sub-title {
-      border: 1px solid #ffffff;
-      background: rgba(208, 239, 255, 0.6);
-      padding: 16px;
-      font-size: 14px;
-      color: #165E84;
-      display: flex;
-      margin-block: 0;
-    }
-    h1.ielts-heading{
-      font-size: 24px;
-    }
-    h1 .ielts-text-heading {
-      font-size: 60px;
-    }
-    .prgrph-1{
-      font-size: 32px;
-      text-align: center;
-    }
-    .prgrph-2{
-      font-size: 40px;
-      text-align: center;
-    }
-    .prgrph-3{
-      font-size: 14px;
-    }
-    .prgrph-1, .prgrph-2, .prgrph-3 {
-      margin-block: 5px;
-    }
-    .join-us-img {
-      position: relative;
-      top: -190px;
-    }
+  .join-us-img{
+    display: none;
   }
   
   .ilets-img {
@@ -362,12 +313,7 @@
     margin-top: -180px;
     z-index: 10;
   }
-  @media (max-width: 768px) {
-    .ilets-img {
-      height: 20vh;
-      margin-top: -100px;
-    }
-  }
+  /* end ilets-sec1 section */
 
   .sec1-content {
     display: flex;
@@ -390,16 +336,6 @@
     transition: background 0.3s ease, transform 0.3s ease;
     margin-top: 20px;
   }
-  @media (max-width: 768px) {
-    .sec1-content img{
-      padding-top: 500px; 
-    }
-    .ilets-sec1 button , .ilets-sec5 button{
-      margin: 15px auto 0 auto;
-      max-width: 100%;
-    }
-  }
-
   .ilets-sec3 {
     font-family: 'DIN Next LT Arabic';
     font-weight: 500;
@@ -416,16 +352,6 @@
     color: #000;
     font-size: 36px;
   }
-  @media (max-width: 768px) {
-    .ilets-sec3 h1{
-          font-size: 28px;
-      }
-      .ilets-sec3 h2{
-          padding: 5% 0 0 0;
-          font-size: 22px;
-      } 
-  }
-
   .ilets-sec5 {
     background-image: url('@/assets/images/bg.jpg');
     background-size: cover;
@@ -484,58 +410,8 @@
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
-  @media (max-width: 1200px) {
-    .ilets-sec5 {
-      flex-direction: column;
-      height: auto;
-    }
-    .founder-info {
-      max-width: 90%;
-      margin-bottom: 20px;
-      padding-right: 0;
-    }
-  }
-  @media (max-width: 768px) {
-    .founder-info h1 {
-      font-size: 2.2rem;
-    }
-    .founder-info h3 {
-      font-size: 1.5rem;
-    }
-    .founder-info p {
-      font-size: 1rem;
-    }
-    .founder2-images img {
-      max-width: 100%; 
-    }
-    .founder2-images {
-      max-width: 100%; 
-    }
-  }
-  @media (max-width: 480px) {
-    .founder-info {
-      text-align: center;
-    }
-    .founder-info h1 {
-      font-size: 1.8rem;
-    }
-    .founder-info h3 {
-      font-size: 1.3rem;
-    }
-    .founder-info ol li {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-    .founder2-images img {
-      max-width: 100%; 
-    }
-    .founder2-images {
-      max-width: 100%; 
-    }
-  }
-
   .full-section{
-      background-color: #fff;
+    background-color: #fff;
     padding: 2% 6% 1% 6%;
   }
   .Last-section h1 {
@@ -575,30 +451,6 @@
     left: 20px; 
     bottom: 20px;
   }
-  @media (max-width: 768px) {
-    .Last-section {
-      width: 95%;  /* Full width for mobile */
-      padding: 10px;  /* Adjust padding */
-      margin: 20px auto;  /* Adjust margin */
-    }
-    .Last-section h1 {
-      font-size: 28px;  /* Smaller font size for mobile */
-      line-height: 40px;  /* Adjust line height */
-    }
-    .Last-section p {
-      font-size: 16px;  /* Smaller font size for mobile */
-      line-height: 24px;  /* Adjust line height */
-    }
-    .contact-btn {
-      padding: 8px 16px;  /* Adjust padding */
-      font-size: 18px;  /* Smaller font size for mobile */
-      position: relative;  /* Change position to relative */
-      left: auto;  /* Reset right position */
-      bottom: auto;  /* Reset bottom position */
-      margin-top: 10px;  /* Add margin for spacing */
-    }
-  }
-
   .full-section-2 {
     background-color: #fff;
     padding: 4%;
@@ -655,57 +507,6 @@
     transform: scale(1.05);
     background: linear-gradient(45deg, #f77919, #fe9b4f);
   }
-  @media (max-width: 1200px) {
-    .inner-section h1 {
-      font-size: 40px; 
-    }
-    .inner-section p {
-      font-size: 1.1rem;
-      padding: 0 15%; 
-    }
-    .inner-section button {
-      max-width: 30%; 
-    }
-    .background-div{
-      background-size: contain;
-    }
-    .start-btn {
-      bottom: 30%;
-      right: 10%;
-    }
-  }
-  @media (max-width: 768px) {
-    .inner-section {
-      padding: 5% 10%; 
-    }
-    .inner-section h1 {
-      font-size: 32px; 
-    }
-    .inner-section p {
-      font-size: 1rem;
-      padding: 0 10%; 
-    }
-    .inner-section button {
-      max-width: 40%; 
-    }
-  }
-  @media (max-width: 480px) {
-    .inner-section {
-      padding: 8% 5%; 
-    }
-    .inner-section h1 {
-      font-size: 28px; 
-    }
-    .inner-section p {
-      font-size: 0.9rem;
-      padding: 0 5%; 
-    }
-    .inner-section button {
-      max-width: 60%;
-      font-size: 1rem; 
-    }
-  }
-
   .background-div {
     width: 100%;
     height: 400px;
@@ -715,7 +516,6 @@
     background-size: contain;
     position: relative;
   }
-
   .start-btn {
     width: 100%;
     max-width: 25%;
@@ -732,22 +532,6 @@
     bottom: 80px;
     right: 140px;
   }
-
-  @media (max-width: 768px) {
-    .background-div {
-      height: 900px;
-      background-image: url('@/assets/images/ilets/sec5-mob.png');
-    }
-
-    .start-btn {
-      max-width: 60%;
-      bottom: 60%; 
-      right: 0;
-      left: 0;
-      margin: 0 auto; 
-    }
-  }
-
   .kids-sec9 {
     display: flex;
     justify-content: center;
@@ -815,7 +599,191 @@
     font-weight: 400;
     line-height: 1.6;
   }
-  @media (min-width: 768px) {
+
+  @media (max-width: 1200px) {
+    .ilets-sec5 {
+      flex-direction: column;
+      height: auto;
+    }
+    .founder-info {
+      max-width: 90%;
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+
+    .inner-section h1 {
+      font-size: 40px; 
+    }
+    .inner-section p {
+      font-size: 1.1rem;
+      padding: 0 15%; 
+    }
+    .inner-section button {
+      max-width: 30%; 
+    }
+    .background-div{
+      background-size: contain;
+    }
+    .start-btn {
+      bottom: 30%;
+      right: 10%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .kids-sec9-content {
+      padding: 40px;
+    }
+    .kids-sec9-text h2 , .kids-sec9-text h3 {
+      font-size: 2.8rem;
+    }
+    .kids-sec9-text .kids-sec9-title {
+      font-size: 1.6rem;
+    }
+    .kids-sec9-text p {
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .ilets-sec1 {
+      background-image: url('@/assets/images/ilets/mob1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-inline: 2rem;
+      margin-top: -5rem;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-container {
+      max-width: max-content;
+      padding-block: 5rem;
+      padding-inline: 0;
+      margin-block: 0;
+      margin-top: 20rem;
+    }
+
+    .sub-title {
+      border: 1px solid #ffffff;
+      background: rgba(208, 239, 255, 0.6);
+      padding: 16px;
+      font-size: 14px;
+      color: #165E84;
+      display: flex;
+      margin-block: 0;
+    }
+    h1.ielts-heading{
+      font-size: 24px;
+    }
+    h1 .ielts-text-heading {
+      font-size: 60px;
+    }
+    .prgrph-1{
+      font-size: 32px;
+      text-align: center;
+    }
+    .prgrph-2{
+      font-size: 40px;
+      text-align: center;
+    }
+    .prgrph-3{
+      font-size: 14px;
+    }
+    .prgrph-1, .prgrph-2, .prgrph-3 {
+      margin-block: 5px;
+    }
+    .join-us-img {
+      display: block;
+      position: relative;
+      top: -190px;
+    }
+
+    .ilets-img {
+      height: 20vh;
+      margin-top: -100px;
+    }
+
+    .sec1-content img{
+      padding-top: 500px; 
+    }
+    .ilets-sec1 button , .ilets-sec5 button{
+      margin: 15px auto 0 auto;
+      max-width: 100%;
+    }
+
+    .ilets-sec3 h1{
+      font-size: 28px;
+    }
+    .ilets-sec3 h2{
+      padding: 5% 0 0 0;
+      font-size: 22px;
+    } 
+    .founder-info h1 {
+      font-size: 2.2rem;
+    }
+    .founder-info h3 {
+      font-size: 1.5rem;
+    }
+    .founder-info p {
+      font-size: 1rem;
+    }
+    .founder2-images img {
+      max-width: 100%; 
+    }
+    .founder2-images {
+      max-width: 100%; 
+    }
+
+    .Last-section {
+      width: 95%;  /* Full width for mobile */
+      padding: 10px;  /* Adjust padding */
+      margin: 20px auto;  /* Adjust margin */
+    }
+    .Last-section h1 {
+      font-size: 28px;  /* Smaller font size for mobile */
+      line-height: 40px;  /* Adjust line height */
+    }
+    .Last-section p {
+      font-size: 16px;  /* Smaller font size for mobile */
+      line-height: 24px;  /* Adjust line height */
+    }
+    .contact-btn {
+      padding: 8px 16px;  /* Adjust padding */
+      font-size: 18px;  /* Smaller font size for mobile */
+      position: relative;  /* Change position to relative */
+      left: auto;  /* Reset right position */
+      bottom: auto;  /* Reset bottom position */
+      margin-top: 10px;  /* Add margin for spacing */
+    }
+
+    .inner-section {
+      padding: 5% 10%; 
+    }
+    .inner-section h1 {
+      font-size: 32px; 
+    }
+    .inner-section p {
+      font-size: 1rem;
+      padding: 0 10%; 
+    }
+    .inner-section button {
+      max-width: 40%; 
+    }
+
+    .background-div {
+      height: 900px;
+      background-image: url('@/assets/images/ilets/sec5-mob.png');
+    }
+
+    .start-btn {
+      max-width: 60%;
+      bottom: 60%; 
+      right: 0;
+      left: 0;
+      margin: 0 auto; 
+    }
+
     .kids-sec9-content {
       flex-direction: row;
     }
@@ -836,18 +804,45 @@
       font-size: 1.2rem;
     }
   }
-  @media (min-width: 1024px) {
-    .kids-sec9-content {
-      padding: 40px;
+  @media (max-width: 480px) {
+    .join-us-img{
+      top: -163px;
+      width: 100%;
     }
-    .kids-sec9-text h2 , .kids-sec9-text h3 {
-      font-size: 2.8rem;
+
+    .founder-info {
+      text-align: center;
     }
-    .kids-sec9-text .kids-sec9-title {
-      font-size: 1.6rem;
+    .founder-info h1 {
+      font-size: 1.8rem;
     }
-    .kids-sec9-text p {
+    .founder-info h3 {
       font-size: 1.3rem;
+    }
+    .founder-info ol li {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .founder2-images img {
+      max-width: 100%; 
+    }
+    .founder2-images {
+      max-width: 100%; 
+    }
+
+    .inner-section {
+      padding: 8% 5%; 
+    }
+    .inner-section h1 {
+      font-size: 28px; 
+    }
+    .inner-section p {
+      font-size: 0.9rem;
+      padding: 0 5%; 
+    }
+    .inner-section button {
+      max-width: 60%;
+      font-size: 1rem; 
     }
   }
 </style>

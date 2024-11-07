@@ -115,7 +115,7 @@
         name: this.fullName,
         email: this.email,
         phone: this.fullPhoneNumber,
-        stage: 'ilets-landing', 
+        stage: 'ilets-landing-popup', 
       };
       
       console.log("Payload before sending:", payload);
