@@ -3,7 +3,7 @@
 
   <div style="background-color: #fff;">
     <div class="ilets-sec1">
-      <div class="sec1-content">
+      <div class="text-container">
         <picture>
           <source media="(max-width: 768px)" srcset="@/assets/images/ilets/content1en.png">
           <img src="@/assets/images/ilets/content1en.png" alt="Description" />

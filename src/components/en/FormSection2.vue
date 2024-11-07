@@ -2,10 +2,10 @@
   <div class="form-section">
     <div class="content-container">
       <div class="text-container">
-        <h1>Enter your details</h1>
+        <h1>Register Your Information</h1>
         <p>
-            Reserve your seat today and join thousands of students who have achieved remarkable success through our interactive, internationally accredited programs. With full support and advanced educational resources, we will be with you every step of the way to achieve your language goals. Don’t miss the opportunity!        
-            </p>
+          Book your seat today and join thousands of students who have achieved remarkable success through our interactive and internationally accredited programs. With full support and advanced educational resources, we will be with you every step of the way to achieve your language goals. Don't miss the opportunity!
+        </p>
       </div>
       <form @submit.prevent="register" class="pop-form">
         <div class="inline-group">
@@ -14,7 +14,7 @@
             <input type="text" class="pop-input" id="fullName" placeholder="Full Name" v-model="fullName" required />
           </div>
           <div class="form-pop">
-            <label for="phoneNumber" class="pop-label">Country code followed by WhatsApp number</label>
+            <label for="phoneNumber" class="pop-label">Country Code followed by WhatsApp Number</label>
             <vue-tel-input 
                 class="pop-input" 
                 style="direction:ltr; color:black;"
@@ -26,18 +26,18 @@
                 :preferred-countries="['SA', 'KW', 'AE', 'QA', 'EG', 'JO', 'OM', 'YE', 'BH', 'IQ']" 
                 defaultCountry="SA" 
                 :inputOptions="inputOptions" 
-                :inputprops="{ name: 'phoneNumber', id: 'phoneNumber', required: true, placeholder: 'Phone number' }" 
+                :inputprops="{ name: 'phoneNumber', id: 'phoneNumber', required: true, placeholder: 'Phone Number' }" 
                 :disabled="loading" 
             />
           </div>
         </div>
         <div class="form-pop">
-          <label for="email" class="pop-label">Email</label>
+          <label for="email" class="pop-label">Email Address</label>
           <input type="email" class="pop-input" id="email" placeholder="example@email.com" v-model="email" required />
         </div>
         <input type="hidden" v-model="fullPhoneNumber" />
         <input type="hidden" v-model="countryCode" />
-        <button type="submit" class="pop-btn">Sign Up Now</button>
+        <button type="submit" class="pop-btn" id="adults-pop-en">Sign Up Now</button>
       <div v-if="successMessage" class="success-message">{{ successMessage }}</div>
       </form>
     </div>
@@ -128,7 +128,7 @@ export default {
   background-size: cover;
   background-position: center;
   direction: ltr;
-  text-align: left;
+  text-align: lrft;
   color: #fff;
   font-family: 'DIN Next LT Arabic';
   font-weight: 500;
@@ -173,22 +173,20 @@ export default {
 }
 
 .pop-form {
-  direction: ltr;
-  text-align: left;
+  text-align: right;
+  direction: rtl;
   width: 50%;
 }
 
 .pop-input {
+  box-sizing: border-box;
   width: calc(100% - 1.25em);
-  padding: 0.8em;
+  padding: 0.625em;
   margin: 0;
   border-radius: 15px;
   background-color: #f3f7ff;
-  color: #000;
   border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: border 0.3s;
-  height: 50px;
+  height: 50px; 
 }
 
 .pop-input:focus {
@@ -202,7 +200,7 @@ form .form-pop {
 .pop-label {
   display: block;
   margin-right: 0.75em;
-  text-align: left;
+  text-align: right;
   font-weight: 500;
   color: #bababa;
   margin-bottom: 5px;

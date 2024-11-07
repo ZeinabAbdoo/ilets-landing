@@ -37,7 +37,7 @@
         </div>
         <input type="hidden" v-model="fullPhoneNumber" />
         <input type="hidden" v-model="countryCode" />
-        <button type="submit" class="pop-btn">اشترك الآن</button>
+        <button type="submit" class="pop-btn" id="adults-form-ar">اشترك الآن</button>
       <div v-if="successMessage" class="success-message">{{ successMessage }}</div>
       </form>
     </div>
@@ -179,16 +179,14 @@ export default {
 }
 
 .pop-input {
+  box-sizing: border-box;
   width: calc(100% - 1.25em);
-  padding: 0.8em;
+  padding: 0.625em;
   margin: 0;
   border-radius: 15px;
   background-color: #f3f7ff;
-  color: #000;
   border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: border 0.3s;
-  height: 50px;
+  height: 50px; 
 }
 
 .pop-input:focus {

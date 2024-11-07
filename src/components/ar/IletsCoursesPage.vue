@@ -17,6 +17,7 @@
           <i class="fab fa-whatsapp"></i>
         </button>
       </div>
+      <img class="join-us-img" src="@/assets/images/ilets/mob3.png" alt="">
     </div>
     
     <div class="ilets-sec3">
@@ -43,93 +44,93 @@
        </div>
     </div>
 
-  <div class="kids-sec9">
-    <div class="kids-sec9-content">
-      <div class="kids-sec9-text">
-        <h3>مميزات برنامج التحضير</h3>
-        <h2>لاخــــــــــــــتبار IELTS في الأكاديمية</h2>
-        <p>نحن نحرص على تقديم أفضل تجربة تعليمية لضمان تفوقك في اختبار الـ IELTS، لذلك نقدم لك مجموعة من المميزات الحصرية التي تشمل:</p>
-        <div @click="toggleDescription2(1)" class="kids-sec9-title" :class="{ active: activeDescription === 1 }">
-          <span>01. ضمان الحصول على +7 في الـ IELTS:</span>
-          <span class="caret">
-            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
-              <defs>
-                <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F47D21"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </div>
-        <p v-if="activeDescription === 1">نضمن لك الحصول على درجة +7 أو أعلى بفضل طرق التحضير المبتكرة والدعم الكامل من معلمينا.</p>
+    <div class="kids-sec9">
+      <div class="kids-sec9-content">
+        <div class="kids-sec9-text">
+          <h3>مميزات برنامج التحضير</h3>
+          <h2>لاخــــــــــــــتبار IELTS في الأكاديمية</h2>
+          <p>نحن نحرص على تقديم أفضل تجربة تعليمية لضمان تفوقك في اختبار الـ IELTS، لذلك نقدم لك مجموعة من المميزات الحصرية التي تشمل:</p>
+          <div @click="toggleDescription2(1)" class="kids-sec9-title" :class="{ active: activeDescription === 1 }">
+            <span>01. ضمان الحصول على +7 في الـ IELTS:</span>
+            <span class="caret">
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
+                <defs>
+                  <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F47D21"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </div>
+          <p v-if="activeDescription === 1">نضمن لك الحصول على درجة +7 أو أعلى بفضل طرق التحضير المبتكرة والدعم الكامل من معلمينا.</p>
 
-        <div @click="toggleDescription2(2)" class="kids-sec9-title" :class="{ active: activeDescription === 2 }">
-          <span>02. تقييم مستواك بشكل دوري</span>
-          <span class="caret">
-            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
-              <defs>
-                <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F47D21"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </div>
-        <p v-if="activeDescription === 2">يتم تقييم مستواك بشكل دوري وتقديم نصائح فردية لتحسين أدائك باستمرار.</p>
+          <div @click="toggleDescription2(2)" class="kids-sec9-title" :class="{ active: activeDescription === 2 }">
+            <span>02. تقييم مستواك بشكل دوري</span>
+            <span class="caret">
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
+                <defs>
+                  <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F47D21"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </div>
+          <p v-if="activeDescription === 2">يتم تقييم مستواك بشكل دوري وتقديم نصائح فردية لتحسين أدائك باستمرار.</p>
 
-        <div @click="toggleDescription2(3)" class="kids-sec9-title" :class="{ active: activeDescription === 3 }">
-          <span>03. مصادر تعليمية مجانية</span>
-          <span class="caret">
-            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
-              <defs>
-                <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F47D21"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </div>
-        <p v-if="activeDescription === 3">استمتع بمجموعة من الموارد التعليمية المجانية التي تساعدك على التدرب بشكل فعال وتحقيق أفضل النتائج.</p>
+          <div @click="toggleDescription2(3)" class="kids-sec9-title" :class="{ active: activeDescription === 3 }">
+            <span>03. مصادر تعليمية مجانية</span>
+            <span class="caret">
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
+                <defs>
+                  <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F47D21"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </div>
+          <p v-if="activeDescription === 3">استمتع بمجموعة من الموارد التعليمية المجانية التي تساعدك على التدرب بشكل فعال وتحقيق أفضل النتائج.</p>
 
-        <div @click="toggleDescription2(4)" class="kids-sec9-title" :class="{ active: activeDescription === 4 }">
-          <span>04. محاكاة حقيقية للاختبار</span>
-          <span class="caret">
-            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
-              <defs>
-                <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F47D21"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                  <stop offset="1" stop-color="#FF9D52"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
+          <div @click="toggleDescription2(4)" class="kids-sec9-title" :class="{ active: activeDescription === 4 }">
+            <span>04. محاكاة حقيقية للاختبار</span>
+            <span class="caret">
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13.75L11 20.75M11 20.75L18 27.75M11 20.75L29 20.75" stroke="url(#paint0_linear_134_3907)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 40 0.75)" stroke="#FF994A"/>
+                <defs>
+                  <linearGradient id="paint0_linear_134_3907" x1="10.7783" y1="27.6071" x2="30.0534" y2="15.1832" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F47D21"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                    <stop offset="1" stop-color="#FF9D52"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </div>
+          <p v-if="activeDescription === 4">نعمل على تقديم جلسات محاكاة فعلية لاختبار IELTS لضمان جاهزيتك الكاملة للامتحان.</p>
         </div>
-        <p v-if="activeDescription === 4">نعمل على تقديم جلسات محاكاة فعلية لاختبار IELTS لضمان جاهزيتك الكاملة للامتحان.</p>
-      </div>
-      <div class="kids-sec9-images">
-        <img src="@/assets/images/ilets/sec3.png">
+        <div class="kids-sec9-images">
+          <img src="@/assets/images/ilets/sec3.png">
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="background-div">
-    <button class="start-btn" @click="sendMessage" id="whatsapp-ilets-btn">ابدأ الآن</button>
-  </div>
+    <div class="background-div">
+      <button class="start-btn" @click="sendMessage" id="whatsapp-ilets-btn">ابدأ الآن</button>
+    </div>
 
     <PackagesIlets />
 
@@ -252,7 +253,7 @@
     max-width: 45%;
     position: relative;
     z-index: 2;
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     color: #ffffff;
   }
 
@@ -305,13 +306,19 @@
       background-size: contain;
       background-repeat: no-repeat;
       padding-inline: 2rem;
-      margin-top: -326px;
+      margin-top: -5rem;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .text-container {
       max-width: max-content;
-      padding-block: 35rem;
+      padding-block: 5rem;
       padding-inline: 0;
       margin-block: 0;
+      margin-top: 20rem;
     }
 
     .sub-title {
@@ -343,12 +350,12 @@
     .prgrph-1, .prgrph-2, .prgrph-3 {
       margin-block: 5px;
     }
+    .join-us-img {
+      position: relative;
+      top: -190px;
+    }
   }
   
-  .ilets-sec2 {
-    position: relative; 
-    z-index: 2; 
-  }
   .ilets-img {
     width: 100%;
     height: 30vh;
@@ -659,6 +666,13 @@
     .inner-section button {
       max-width: 30%; 
     }
+    .background-div{
+      background-size: contain;
+    }
+    .start-btn {
+      bottom: 30%;
+      right: 10%;
+    }
   }
   @media (max-width: 768px) {
     .inner-section {
@@ -694,11 +708,11 @@
 
   .background-div {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-image: url('@/assets/images/ilets/sec5.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
   }
 
@@ -715,8 +729,8 @@
     font-family: 'DIN Next LT Arabic';
     font-weight: 500;
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 80px;
+    right: 140px;
   }
 
   @media (max-width: 768px) {
